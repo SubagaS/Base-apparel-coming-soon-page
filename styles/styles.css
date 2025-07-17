@@ -33,7 +33,7 @@ header img {
   max-width: 23.4rem;
   max-height: 39rem;
   img {
-    width: 23.4rem;
+    width: 100%;
     height: 15.6rem;
   }
 }
@@ -88,6 +88,9 @@ header img {
       input.invalid {
         border: solid 0.125rem var(--red-500);
       }
+      input.valid {
+        border: solid 0.125rem green;
+      }
       .error-icon {
         width: 1.5rem;
         height: 1.5rem;
@@ -100,6 +103,20 @@ header img {
         position: absolute;
         top: 3.5rem;
         right: 8rem;
+      }
+      .success-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        position: absolute;
+        top: 0.75rem;
+        right: 4.5rem;
+      }
+      .success-message {
+        width: 100%;
+        color: green;
+        position: absolute;
+        top: 3.5rem;
+        right: 0.2rem;
       }
     }
   }
@@ -118,6 +135,9 @@ header img {
     width: 0.5rem;
     height: 1rem;
   }
+}
+.arrow-submit:hover {
+  cursor: pointer;
 }
 .hidden {
   display: none;
